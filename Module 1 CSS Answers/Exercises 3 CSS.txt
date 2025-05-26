@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="mainHeader">
+        <h1>Welcome to the Event Hub</h1>
+    </header>
+
+    <section class="eventCard">
+        <h2>Music Festival</h2>
+        <h3>Live Bands</h3>
+        <p>Join us for an evening of rock, jazz, and blues.</p>
+    </section>
+
+    <section class="eventCard">
+        <h2>Art Exhibition</h2>
+        <h3>Modern Art</h3>
+        <p>Explore creative masterpieces from around the world.</p>
+    </section>
+
+</body>
+</html>
+
+
+
+CSS
+---
+
+/* ===============================
+   Universal Reset
+   =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   Element Selector: Style all <h2> tags
+   =============================== */
+h2 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   ID Selector: Banner header
+   =============================== */
+#mainHeader {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===============================
+   Class Selector: Event containers
+   =============================== */
+.eventCard {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* ===============================
+   Grouping Selector: h3 and p elements
+   =============================== */
+h3, p {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 8px;
+    color: #555;
+}
+

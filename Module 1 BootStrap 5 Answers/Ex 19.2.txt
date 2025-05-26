@@ -1,0 +1,42 @@
+// _variables.scss
+
+// Customize Bootstrap variables before import
+$primary: #ff6600 !default;           // Custom primary color (orange)
+$border-radius: 1rem !default;        // Custom border radius (rounded corners bigger)
+
+
+
+// custom.scss
+
+@import "variables";                 // Your custom variables first
+@import "../node_modules/bootstrap/scss/bootstrap";  // Then Bootstrap core
+
+
+
+"scripts": {
+  "build-css": "sass scss/custom.scss css/custom.css --no-source-map --style=compressed"
+}
+
+npm run build-css
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bootstrap 5 Sass Customization</title>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+
+<div class="container py-5">
+  <button class="btn btn-primary rounded">Custom Primary Button</button>
+  <div class="border p-3 mt-3 rounded">
+    This box uses customized border radius.
+  </div>
+</div>
+
+</body>
+</html>

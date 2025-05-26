@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.1 - Typography Utilities</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="display-1">Display 1 Heading</h1>
+    <p class="lead">This is a lead paragraph. It stands out from regular paragraphs.</p>
+    <p class="text-muted">This text is muted to appear less prominent.</p>
+    <p class="fw-bold">This text is bold using Bootstrap’s fw-bold class.</p>
+    <p class="fst-italic">This is italic text using the fst-italic class.</p>
+    <p class="text-primary">Primary colored text using text-primary.</p>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

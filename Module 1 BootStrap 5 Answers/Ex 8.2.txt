@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2 - Login Form</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-5" style="max-width: 400px;">
+    <h2 class="mb-4 text-center">Login</h2>
+    <form>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+        <label for="floatingEmail">Email address</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

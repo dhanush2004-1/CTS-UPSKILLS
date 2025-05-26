@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Portal - Typography</title>
+    
+    <!-- Include Google Font via <link> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <h1>Welcome to the City Council Portal</h1>
+    </header>
+
+    <section class="intro-section">
+        <p class="description">
+            Discover city services, community events, and resources to stay informed and engaged. 
+        </p>
+    </section>
+
+    <section class="quote-section">
+        <p class="quote">"Empowering citizens, enriching communities."</p>
+    </section>
+
+</body>
+</html>
+
+
+
+CSS
+------
+
+/* ===============================
+   Base Typography Reset
+   =============================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background-color: #fafafa;
+}
+
+/* ===============================
+   Page Header Styling
+   =============================== */
+.page-header h1 {
+    font-family: 'Playfair Display', serif;   /* Elegant serif font */
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ===============================
+   Intro Section Description
+   =============================== */
+.description {
+    font-size: 18px;
+    line-height: 1.8;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    padding: 0 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ===============================
+   Quote Section
+   =============================== */
+.quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    margin: 40px auto;
+    color: #555;
+    letter-spacing: 1px;
+}
+

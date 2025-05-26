@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Example</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hello!">
+      Hover me
+    </button>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+  </script>
+</body>
+</html>

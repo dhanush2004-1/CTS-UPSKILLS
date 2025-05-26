@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Council Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="council-section">
+        <h2>City Services</h2>
+        <p>Find information about public transport, parks, and sanitation.</p>
+    </section>
+
+    <section class="council-section">
+        <h2>Community Programs</h2>
+        <p>Explore volunteer opportunities and local events.</p>
+    </section>
+
+</body>
+</html>
+
+
+
+
+CSS
+---
+
+/* ===============================
+   Body Styling with Image & Fallback
+   =============================== */
+body {
+    background-color: #e0e0e0; /* Fallback solid color */
+    background-image: url('city-background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+/* ===============================
+   Section Styling
+   =============================== */
+.council-section {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   Section Headers with Gradient
+   =============================== */
+.council-section h2 {
+    background: linear-gradient(to right, #004aad, #00c6ff); /* Blue gradient */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ===============================
+   Paragraph Styling
+   =============================== */
+.council-section p {
+    font-size: 18px;
+    color: #333; /* HEX color */
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive City Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>City Portal</h1>
+  </header>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <img src="https://via.placeholder.com/800x300" alt="City image" />
+    <p class="description">
+      Welcome to your official city council portal. Stay updated on events, resources, and community programs.
+    </p>
+  </section>
+
+</body>
+</html>
+
+
+
+CSS
+----
+
+/* ===============================
+   Base Styles
+   =============================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.2vw;
+}
+
+header {
+  text-align: center;
+  padding: 2vh 0;
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Navigation */
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  gap: 2vw;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 1vh 2vw;
+}
+
+/* Hero Section */
+.hero {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+
+.description {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* ===============================
+   Responsive Design (Media Query)
+   =============================== */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 4vw; /* Use viewport width for scalable text */
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .description {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 9.1 - Buttons</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h3>Bootstrap Buttons</h3>
+
+    <button type="button" class="btn btn-primary me-2">Primary</button>
+    <button type="button" class="btn btn-secondary me-2">Secondary</button>
+    <button type="button" class="btn btn-success me-2">Success</button>
+    <button type="button" class="btn btn-danger me-2">Danger</button>
+    <button type="button" class="btn btn-warning me-2">Warning</button>
+    <button type="button" class="btn btn-info me-2">Info</button>
+    <button type="button" class="btn btn-light me-2">Light</button>
+    <button type="button" class="btn btn-dark me-2">Dark</button>
+
+    <hr />
+
+    <button type="button" class="btn btn-outline-primary me-2">Outline Primary</button>
+    <button type="button" class="btn btn-outline-secondary me-2">Outline Secondary</button>
+    <button type="button" class="btn btn-outline-success me-2">Outline Success</button>
+    <button type="button" class="btn btn-outline-danger me-2">Outline Danger</button>
+    <button type="button" class="btn btn-outline-warning me-2">Outline Warning</button>
+    <button type="button" class="btn btn-outline-info me-2">Outline Info</button>
+    <button type="button" class="btn btn-outline-light me-2">Outline Light</button>
+    <button type="button" class="btn btn-outline-dark me-2">Outline Dark</button>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

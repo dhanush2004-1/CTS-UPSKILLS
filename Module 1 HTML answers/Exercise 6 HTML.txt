@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Feedback</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .error {
+      border-color: red;
+      background-color: #ffe6e6;
+    }
+    #eventFee {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    #charCount {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+      text-align: right;
+    }
+    #feedbackImage {
+      margin-top: 20px;
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      border: 2px solid #007BFF;
+      border-radius: 8px;
+    }
+    #feedbackImage.enlarged {
+      transform: scale(1.5);
+      border-color: #ff6600;
+      z-index: 10;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #confirmationMsg {
+      margin-top: 15px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Event Feedback Form</h2>
+
+  <form id="feedbackForm">
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required
+      onblur="validatePhone(this)" />
+
+    <label for="eventSelect">Select Event:</label>
+    <select id="eventSelect" name="eventSelect" onchange="showEventFee()" required>
+      <option value="" disabled selected>Select an event</option>
+      <option value="festival" data-fee="Free">Spring Festival - Free</option>
+      <option value="concert" data-fee="$50">Summer Concert - $50</option>
+      <option value="workshop" data-fee="$100">Workshop - $100</option>
+    </select>
+
+    <div id="eventFee"></div>
+
+    <label for="feedback">Your Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="5" placeholder="Type your feedback..."
+      onkeydown="countChars(event)" onkeyup="countChars(event)"></textarea>
+    <div id="charCount">Characters: 0</div>
+
+    <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+  </form>
+
+  <img src="event.jpg" alt="Event" id="feedbackImage" ondblclick="toggleImageSize()" title="Double-click to enlarge" />
+
+  <div id="confirmationMsg"></div>
+
+  <script>
+    // Validate phone number on blur
+    function validatePhone(input) {
+      const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
+      if (!phonePattern.test(input.value.trim())) {
+        input.classList.add('error');
+        alert('Please enter a valid phone number in the format 123-456-7890.');
+        input.focus();
+      } else {
+        input.classList.remove('error');
+      }
+    }
+
+    // Show event fee on change
+    function showEventFee() {
+      const select = document.getElementById('eventSelect');
+      const fee = select.options[select.selectedIndex].getAttribute('data-fee');
+      const feeDiv = document.getElementById('eventFee');
+      feeDiv.textContent = fee ? `Event Fee: ${fee}` : '';
+    }
+
+    // Submit button click confirmation
+    function submitFeedback() {
+      const phoneInput = document.getElementById('phone');
+      if (phoneInput.classList.contains('error') || !phoneInput.value.trim()) {
+        alert('Please enter a valid phone number before submitting.');
+        phoneInput.focus();
+        return;
+      }
+      const eventSelect = document.getElementById('eventSelect');
+      if (!eventSelect.value) {
+        alert('Please select an event.');
+        eventSelect.focus();
+        return;
+      }
+      document.getElementById('confirmationMsg').textContent = 'Thank you for your feedback!';
+    }
+
+    // Double click image to enlarge/shrink
+    function toggleImageSize() {
+      const img = document.getElementById('feedbackImage');
+      img.classList.toggle('enlarged');
+    }
+
+    // Count characters in feedback textarea on key events
+    function countChars() {
+      const feedback = document.getElementById('feedback');
+      const count = feedback.value.length;
+      document.getElementById('charCount').textContent = `Characters: ${count}`;
+    }
+  </script>
+
+</body>
+</html>

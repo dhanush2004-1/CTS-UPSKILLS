@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.2 - Text Transformations</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <p class="text-uppercase">this text will appear in uppercase</p>
+    <p class="text-lowercase">THIS TEXT WILL APPEAR IN LOWERCASE</p>
+    <p class="text-capitalize">this text will be capitalized</p>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

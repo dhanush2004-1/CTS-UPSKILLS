@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 11.1 - Profile Card</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container mt-5" style="max-width: 350px;">
+  <div class="card">
+    <img src="https://randomuser.me/api/portraits/men/75.jpg" class="card-img-top" alt="Profile Image" />
+    <div class="card-body">
+      <h5 class="card-title">John Doe</h5>
+      <p class="card-text">Web Developer based in New York. Loves coding, coffee, and cats.</p>
+      <a href="#" class="btn btn-primary">Follow</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

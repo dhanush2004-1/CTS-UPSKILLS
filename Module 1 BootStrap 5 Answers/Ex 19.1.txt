@@ -1,0 +1,24 @@
+mkdir bootstrap-sass-project
+cd bootstrap-sass-project
+npm init -y
+
+
+npm install bootstrap@5 sass
+
+
+bootstrap-sass-project/
+├── node_modules/
+├── scss/
+│   ├── custom.scss
+├── index.html
+├── package.json
+
+
+
+// custom.scss
+
+// Optional: Override variables before importing Bootstrap
+@import "variables";  // Your custom variables file if any
+
+// Import Bootstrap source
+@import "../node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,15 @@
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.min.css
+│   └── bootstrap-grid.min.css (optional)
+├── js/
+│   ├── bootstrap.bundle.js
+│   ├── bootstrap.bundle.min.js
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── icons/  (only if you downloaded Bootstrap Icons separately)
+    ├── bootstrap-icons.css
+    └── fonts/
+        ├── bootstrap-icons.woff
+        └── bootstrap-icons.woff2

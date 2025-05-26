@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 5.1 - Center Content</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .center-container {
+      height: 300px;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container center-container">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-6 text-center bg-light p-4 border">
+        Centered Content
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

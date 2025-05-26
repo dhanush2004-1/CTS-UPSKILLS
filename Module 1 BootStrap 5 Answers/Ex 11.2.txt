@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 11.2 - Media Object</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container mt-5" style="max-width: 600px;">
+  <div class="d-flex align-items-start">
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Profile" class="me-3 rounded" style="width: 100px; height: 100px; object-fit: cover;">
+    <div>
+      <h5>Jane Smith</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur cursus, nisl nunc.</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

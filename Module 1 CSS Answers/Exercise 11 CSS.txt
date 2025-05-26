@@ -1,0 +1,68 @@
+Step 1: Open Chrome DevTools
+Right-click on your webpage → Inspect, or press Ctrl+Shift+I (Windows/Linux) or Cmd+Option+I (Mac).
+
+DevTools panel opens.
+
+
+
+
+Step 2: Use Device Toolbar to Simulate Screens
+Click the Toggle device toolbar button (📱 icon) or press Ctrl+Shift+M.
+
+Select different devices (e.g., iPhone, iPad, Galaxy) from the dropdown to simulate screen sizes.
+
+You can also drag the edges to test custom widths and heights.
+
+
+
+
+Step 3: Inspect and Edit Styles Live
+In the Elements tab, select the element you want to debug (click on it in the HTML tree or use the picker tool).
+
+On the right, in the Styles pane, view all CSS rules applied.
+
+Click on any value (e.g., padding: 20px) and edit it live to see instant results.
+
+Toggle properties on/off by checking/unchecking them.
+
+Add new CSS properties in the empty space at the bottom of the Styles pane.
+
+
+
+
+Step 4: Debug Media Queries
+When using device toolbar, media queries should trigger automatically.
+
+You can see media query rules in the Styles pane, often highlighted or grouped.
+
+Test if your responsive CSS activates correctly at various breakpoints.
+
+
+
+
+Step 5: Check External CSS Loading
+Go to the Network tab.
+
+Refresh the page (F5).
+
+Filter by "CSS" or look for your stylesheet file (e.g., styles.css).
+
+Ensure it has loaded successfully (status 200).
+
+If it’s missing or shows an error, verify your <link> tag and file path.
+
+
+
+
+Step 6: Use VS Code for Live Editing and Debugging
+Open your project folder in VS Code.
+
+Use the Live Server extension to open your page in a browser with live reload.
+
+Edit your CSS or HTML files; changes reflect immediately.
+
+Use built-in search to find problematic selectors.
+
+Check problems tab for syntax errors.
+
+Use extensions like CSS Peek or IntelliSense for better navigation and suggestions.

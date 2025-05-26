@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Methods Example</title>
+
+    <!-- Internal/Embedded CSS -->
+    <style>
+        /* Body styles */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        h2 {
+            color: green;
+        }
+    </style>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Inline style applied -->
+    <h1 style="color: red;">This is an Inline Styled Heading</h1>
+
+    <!-- Internal style applied -->
+    <h2>This is an Internally Styled Heading</h2>
+
+    <!-- External style applied -->
+    <p>This paragraph is styled using an external stylesheet.</p>
+
+</body>
+</html>
+
+
+
+CSS
+...
+
+/* Header styles */
+h1, h2 {
+    text-align: center;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Footer styles (if needed later) */
+/* footer {
+    text-align: center;
+    color: gray;
+} */
+
+

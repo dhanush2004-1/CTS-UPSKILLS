@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Community Bulletin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="news-article">
+        <h2>Community Bulletin</h2>
+        <p>
+            The annual Community Fair is set to take place next weekend, featuring food trucks, local bands, and artisans.
+            Residents are encouraged to participate and support local talent. Parking will be available at designated lots with
+            shuttle service running throughout the day.
+        </p>
+        <p>
+            In addition, the City Council is reviewing new policies to improve public transportation accessibility.
+            The proposal includes new bus routes and infrastructure upgrades. Feedback from citizens is welcome and
+            can be submitted online or in person at the next council meeting.
+        </p>
+        <p>
+            Other ongoing projects include park renovations, community garden expansions, and youth outreach programs.
+            Volunteers are always appreciated. Check the official city website for updates and opportunities to get involved.
+        </p>
+    </section>
+
+</body>
+</html>
+
+
+
+
+CSS
+----
+
+/* ===============================
+   Multi-Column News Article
+   =============================== */
+.news-article {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.news-article h2 {
+    column-span: all;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+

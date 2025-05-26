@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 17.2 - Icon-Only Buttons</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container my-5 text-center">
+  <button type="button" class="btn btn-primary me-2" aria-label="Search">
+    <i class="bi bi-search"></i>
+  </button>
+
+  <button type="button" class="btn btn-success me-2" aria-label="Check">
+    <i class="bi bi-check-lg"></i>
+  </button>
+
+  <button type="button" class="btn btn-danger" aria-label="Trash">
+    <i class="bi bi-trash"></i>
+  </button>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 14.2 - Responsive Sidebar</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body, html {
+      height: 100%;
+    }
+    .sidebar {
+      background-color: #343a40;
+      color: white;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- Sidebar visible md and above -->
+    <nav class="col-md-3 d-none d-md-block sidebar">
+      <h5>Sidebar Menu</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="#" class="nav-link text-white">Dashboard</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Profile</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Settings</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="col-12 col-md-9 py-4">
+      <h2>Main Content Area</h2>
+      <p>This content fills full width on small devices and leaves space for sidebar on md and larger.</p>
+    </main>
+
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

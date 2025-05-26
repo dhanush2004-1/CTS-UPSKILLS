@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 15.2 - Shadows and Rounded Pill Card</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container my-5 d-flex justify-content-center">
+  <div class="card shadow-lg rounded-pill p-4" style="width: 350px;">
+    <h3 class="card-title text-center mb-3">Special Offer</h3>
+    <p class="card-text text-center">
+      Get 50% off your first purchase! Limited time offer. Don’t miss out.
+    </p>
+    <div class="text-center">
+      <button class="btn btn-primary rounded-pill px-4">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

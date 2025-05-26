@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.1 - Responsive Navbar</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="d-flex flex-column flex-md-row bg-light p-3">
+    <a href="#" class="p-2 text-dark text-decoration-none">Home</a>
+    <a href="#" class="p-2 text-dark text-decoration-none">About</a>
+    <a href="#" class="p-2 text-dark text-decoration-none">Services</a>
+    <a href="#" class="p-2 text-dark text-decoration-none">Contact</a>
+  </nav>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

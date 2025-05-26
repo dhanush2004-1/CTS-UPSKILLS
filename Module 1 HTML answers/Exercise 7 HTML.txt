@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Promo Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Event Promo Video</h2>
+
+  <video id="promoVideo" width="560" controls oncanplay="videoReady()">
+    <source src="promo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div id="message"></div>
+
+  <form id="eventForm">
+    <h3>Register for the Event</h3>
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" placeholder="Your name" required /><br /><br />
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" placeholder="you@example.com" required /><br /><br />
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    // Display message when video can play
+    function videoReady() {
+      document.getElementById('message').textContent = 'Video ready to play!';
+    }
+
+    // Warn user if they try to leave the page with unfinished form
+    let formChanged = false;
+    const form = document.getElementById('eventForm');
+
+    form.addEventListener('input', () => {
+      formChanged = true;
+    });
+
+    form.addEventListener('submit', () => {
+      formChanged = false; // form submitted, no warning needed
+    });
+
+    window.onbeforeunload = function (e) {
+      if (formChanged) {
+        const confirmationMessage = 'You have unsaved changes. Are you sure you want to leave?';
+        e.returnValue = confirmationMessage; // Gecko, Trident, Chrome 34+
+        return confirmationMessage; // Gecko, WebKit, Chrome <34
+      }
+    };
+  </script>
+
+</body>
+</html>

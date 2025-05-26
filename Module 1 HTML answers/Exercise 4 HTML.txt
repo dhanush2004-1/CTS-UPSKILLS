@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community Events Gallery</title>
+  <style>
+    /* Style images with border and spacing */
+    .event-img {
+      border: 3px solid #007BFF;
+      border-radius: 8px;
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+    }
+    table {
+      margin: 20px auto;
+      border-collapse: separate;
+      border-spacing: 15px;
+    }
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    td {
+      text-align: center;
+      vertical-align: top;
+    }
+    .caption-text {
+      margin-top: 5px;
+      font-style: italic;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Gallery of Past Community Events</caption>
+    <tbody>
+      <tr>
+        <td>
+          <img src="event1.jpg" alt="Spring Festival" title="Spring Festival 2024" class="event-img" />
+          <div class="caption-text">Spring Festival 2024</div>
+        </td>
+        <td>
+          <img src="event2.jpg" alt="Summer Concert" title="Summer Concert 2024" class="event-img" />
+          <div class="caption-text">Summer Concert 2024</div>
+        </td>
+        <td>
+          <img src="event3.jpg" alt="Food Fair" title="Annual Food Fair" class="event-img" />
+          <div class="caption-text">Annual Food Fair</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="event4.jpg" alt="Charity Run" title="Charity Run 2024" class="event-img" />
+          <div class="caption-text">Charity Run 2024</div>
+        </td>
+        <td>
+          <img src="event5.jpg" alt="Art Exhibition" title="Local Art Exhibition" class="event-img" />
+          <div class="caption-text">Local Art Exhibition</div>
+        </td>
+        <td>
+          <img src="event6.jpg" alt="Winter Market" title="Winter Market 2024" class="event-img" />
+          <div class="caption-text">Winter Market 2024</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

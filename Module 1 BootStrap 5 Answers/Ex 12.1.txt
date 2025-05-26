@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 12.1 - Spacing Utilities</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container mt-4">
+
+  <section class="m-3 p-2 bg-light border">
+    <h4>Section with m-3 (margin all sides) and p-2 (padding all sides)</h4>
+    <p>This section has margin and padding applied to improve spacing.</p>
+  </section>
+
+  <section class="mt-4 py-5 bg-secondary text-white rounded">
+    <h4>Section with mt-4 (margin top) and py-5 (padding vertical)</h4>
+    <p>This section uses vertical padding and top margin for spacing.</p>
+  </section>
+
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

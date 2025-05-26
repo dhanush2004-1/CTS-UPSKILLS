@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 16.2 - Badge Overlay</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    .badge-overlay {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5 text-center">
+  <div class="image-container">
+    <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Profile" />
+    <span class="badge bg-danger badge-overlay">New</span>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

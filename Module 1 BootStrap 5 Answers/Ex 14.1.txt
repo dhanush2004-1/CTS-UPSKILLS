@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 14.1 - Display and Visibility</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container my-4">
+
+  <div class="bg-primary text-white p-3 mb-3 d-none d-md-block">
+    <h4>This section is hidden on xs and sm, visible as block on md and above</h4>
+  </div>
+
+  <div class="bg-success text-white p-3 mb-3 d-none d-lg-flex justify-content-center align-items-center" style="height: 100px;">
+    <h4>This section is hidden on xs, sm, md; flex on lg and above</h4>
+  </div>
+
+  <div class="bg-warning text-dark p-3 mb-3 d-block d-md-none">
+    <h4>This section is visible only on xs and sm (block), hidden on md and above</h4>
+  </div>
+
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 12.2 - Pricing Section</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center mb-5">Pricing Plans</h2>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card p-4 h-100 text-center">
+        <h3 class="mb-3">Basic</h3>
+        <p class="display-4 mb-3">$9<span class="fs-5">/mo</span></p>
+        <ul class="list-unstyled mb-4">
+          <li class="mb-2">1 User</li>
+          <li class="mb-2">5GB Storage</li>
+          <li class="mb-2">Email Support</li>
+        </ul>
+        <button class="btn btn-outline-primary px-4 py-2">Choose Basic</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-4 h-100 text-center border-primary">
+        <h3 class="mb-3">Standard</h3>
+        <p class="display-4 mb-3">$29<span class="fs-5">/mo</span></p>
+        <ul class="list-unstyled mb-4">
+          <li class="mb-2">10 Users</li>
+          <li class="mb-2">50GB Storage</li>
+          <li class="mb-2">Priority Email Support</li>
+        </ul>
+        <button class="btn btn-primary px-4 py-2">Choose Standard</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-4 h-100 text-center">
+        <h3 class="mb-3">Premium</h3>
+        <p class="display-4 mb-3">$99<span class="fs-5">/mo</span></p>
+        <ul class="list-unstyled mb-4">
+          <li class="mb-2">Unlimited Users</li>
+          <li class="mb-2">150GB Storage</li>
+          <li class="mb-2">Phone & Email Support</li>
+        </ul>
+        <button class="btn btn-outline-primary px-4 py-2">Choose Premium</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

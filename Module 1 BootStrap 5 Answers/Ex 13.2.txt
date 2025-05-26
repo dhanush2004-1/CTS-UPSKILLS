@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 13.2 - Gradient Background</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container my-5 p-5 bg-dark bg-gradient text-white rounded">
+  <h2>Dark Gradient Background</h2>
+  <p>
+    This container uses <code>bg-dark</code> with <code>bg-gradient</code> and white text for a sleek look.
+  </p>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

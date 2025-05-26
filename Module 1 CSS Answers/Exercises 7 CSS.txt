@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events Admin Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Upcoming Events</h2>
+
+    <table class="event-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Event Name</th>
+                <th>Location</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>June 5</td>
+                <td>Summer Music Festival</td>
+                <td>Main Park</td>
+                <td>Confirmed</td>
+            </tr>
+            <tr>
+                <td>June 12</td>
+                <td>Art in the Square</td>
+                <td>City Center</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>June 19</td>
+                <td>Food Truck Fiesta</td>
+                <td>Riverwalk</td>
+                <td>Confirmed</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+
+
+CSS
+---
+
+/* ===============================
+   Table Styling
+   =============================== */
+.event-table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Table header styling */
+.event-table th {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+/* Table cell styling */
+.event-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Zebra striping */
+.event-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

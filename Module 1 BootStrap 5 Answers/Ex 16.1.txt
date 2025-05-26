@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 16.1 - Fixed Footer</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin-bottom: 60px; /* space for fixed footer */
+    }
+    .footer {
+      height: 60px;
+      line-height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h1>Page Content</h1>
+  <p>This page has a fixed footer at the bottom.</p>
+</div>
+
+<footer class="position-fixed bottom-0 w-100 bg-dark text-white text-center footer">
+  Fixed Footer © 2025
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

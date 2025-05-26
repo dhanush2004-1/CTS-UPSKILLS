@@ -1,0 +1,51 @@
+1. Inspect Element & Live Style Editing
+Right-click on any webpage element and select Inspect.
+
+The Elements panel shows the HTML & CSS of the selected element.
+
+You can modify CSS styles live in the Styles pane — changes reflect immediately without reloading.
+
+Toggle CSS properties on/off by clicking checkboxes.
+
+Add new CSS rules on the fly to experiment with layout and appearance.
+
+
+2. Console Tab for Logs & Errors
+Open Console in DevTools (Ctrl+Shift+J / Cmd+Option+J).
+
+Use console.log(), console.warn(), and console.error() in your JS to output info or errors.
+
+View script errors and warnings reported by the browser.
+
+You can also execute JavaScript expressions directly in the console for quick testing.
+
+Example:
+console.log('Debug: user clicked the button');
+
+
+
+3. Using Breakpoints in JS
+In DevTools, go to the Sources tab.
+
+Open your JS file from the file tree or via search.
+
+Click on the line number to add a breakpoint.
+
+Reload the page — execution will pause at that breakpoint.
+
+Use the Scope pane to inspect variable values.
+
+Step through code using Step over, Step into, or Step out buttons.
+
+Modify variables on the fly in the Console while paused.
+
+
+
+4. Debugging in VS Code
+Use the Debugger for Chrome extension in VS Code.
+
+Set breakpoints directly inside VS Code on your JS files.
+
+Launch the debugger to run your site with live debugging.
+
+Inspect variables, call stack, and watch expressions as you step through code.

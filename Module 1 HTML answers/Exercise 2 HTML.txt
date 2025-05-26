@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Navigation Example</title>
+  <style>
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      background: #007BFF;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="help.html" target="_blank">Help</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <h2>Home</h2>
+    <p>Welcome to the city portal homepage.</p>
+  </section>
+
+  <section id="events">
+    <h2>Events</h2>
+    <p>Upcoming events and activities in your community.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Get in touch with city representatives and departments.</p>
+  </section>
+
+</body>
+</html>

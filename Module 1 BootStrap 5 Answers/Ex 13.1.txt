@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 13.1 - Dashboard Colors</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container my-5">
+  <h2 class="mb-4">Dashboard Panels</h2>
+
+  <div class="row g-3">
+    <div class="col-md-3 p-3 bg-primary text-white rounded">
+      <h4>Users</h4>
+      <p>1,234</p>
+    </div>
+    <div class="col-md-3 p-3 bg-success text-white rounded">
+      <h4>Sales</h4>
+      <p>$56,789</p>
+    </div>
+    <div class="col-md-3 p-3 bg-warning text-dark rounded">
+      <h4>Warnings</h4>
+      <p>12</p>
+    </div>
+    <div class="col-md-3 p-3 bg-danger text-white rounded">
+      <h4>Errors</h4>
+      <p>3</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
